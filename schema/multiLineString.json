@@ -14,10 +14,7 @@
         },
         "coordinates": {
           "type": "array",
-          "items": {
-            "type": "array",
-            "items": { "$ref": "position.json" }
-          }
+          "items": { "$ref": "lineString.json" }
         }
       }
     }
