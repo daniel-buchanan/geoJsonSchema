@@ -10,7 +10,8 @@
       "required": ["features"],
       "properties": {
         "type": {
-          "enum": ["FeatureCollection"]
+          "$ref": "enums/geoJSONObjectTypes.json",
+          "default": "FeatureCollection"
         },
         "features": {
           "description": "A list of features associated with the collection",

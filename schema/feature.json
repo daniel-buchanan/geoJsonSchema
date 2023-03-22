@@ -21,7 +21,8 @@
           ]
         },
         "type": {
-          "enum": ["Feature"]
+          "$ref": "enums/geoJSONObjectTypes.json",
+          "default": "Feature"
         },
         "geometry": {
           "oneOf": [
