@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "id": "http://geojson.org/schema/geojson-types",
-  "title": "GeoJSON types",
+  "title": "GeoJSON Types",
   "description": "The value values for the \"type\" property of GeoJSON Objects.",
   "link":"https://tools.ietf.org/html/rfc7946#section-1.4",
   "type": {

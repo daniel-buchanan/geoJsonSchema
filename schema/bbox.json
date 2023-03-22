@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "id": "http://geojson.org/schema/bbox",
-  "title": "GeoJSON bounding box",
+  "title": "GeoJSON Bounding Box",
   "description": "Geo-spatial bounding box.",
   "link":"https://tools.ietf.org/html/rfc7946#section-5",
   "oneOf": [

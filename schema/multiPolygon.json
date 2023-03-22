@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "id": "http://geojson.org/schema/multi-polygon",
-  "title": "MultiPolygon geometry object",
+  "title": "GeoJSON MultiPolygon",
   "link": "https://tools.ietf.org/html/rfc7946#section-3.1.7",
   "type": "object",
   "allOf": [
