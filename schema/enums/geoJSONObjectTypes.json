@@ -4,17 +4,16 @@
   "title": "GeoJSON Types",
   "description": "The value values for the \"type\" property of GeoJSON Objects.",
   "link":"https://tools.ietf.org/html/rfc7946#section-1.4",
-  "type": {
-    "enum": [
-      "Point",
-      "LineString",
-      "MultiPoint",
-      "Polygon",
-      "MultiLineString",
-      "MultiPolygon",
-      "GeometryCollection",
-      "FeatureCollection",
-      "Feature"
-    ]
-  }
+  "type": "string",
+  "enum": [
+    "Point",
+    "LineString",
+    "MultiPoint",
+    "Polygon",
+    "MultiLineString",
+    "MultiPolygon",
+    "GeometryCollection",
+    "FeatureCollection",
+    "Feature"
+  ]
 }
