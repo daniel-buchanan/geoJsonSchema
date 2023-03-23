@@ -6,11 +6,16 @@
   "link":"https://tools.ietf.org/html/rfc7946#section-3",
   "allOf": [
     { "$ref": "geoJSONObject.json" },
-    { "$ref": "anyGeometry.json" },
     {
       "properties": {
         "type": { 
           "$ref": "enums/geometryTypes.json" 
+        },
+        "coordinates": {
+          "type":"array",
+          "items": {
+            "type":"object"
+          }
         }
       }
     }
