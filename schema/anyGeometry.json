@@ -4,29 +4,28 @@
   "title": "GeoJSON geometry types",
   "description": "A helper schema for merging all possible geometries.",
   "link":"https://tools.ietf.org/html/rfc7946#section-3",
-  "type": {
-    "oneOf": [
-      { 
-        "$ref": "point.json" 
-      },
-      { 
-        "$ref": "multiPoint.json" 
-      },
-      { 
-        "$ref": "lineString.json" 
-      },
-      { 
-        "$ref": "multiLineString.json" 
-      },
-      { 
-        "$ref": "polygon.json" 
-      },
-      { 
-        "$ref": "multiPolygon.json" 
-      },
-      { 
-        "$ref": "geometryCollection.json" 
-      }
-    ]
-  }
+  "type": "object",
+  "oneOf": [
+    { 
+      "$ref": "point.json" 
+    },
+    { 
+      "$ref": "multiPoint.json" 
+    },
+    { 
+      "$ref": "lineString.json" 
+    },
+    { 
+      "$ref": "multiLineString.json" 
+    },
+    { 
+      "$ref": "polygon.json" 
+    },
+    { 
+      "$ref": "multiPolygon.json" 
+    },
+    { 
+      "$ref": "geometryCollection.json" 
+    }
+  ]
 }
