@@ -1,0 +1,17 @@
+name: Lint Schemas
+on: [pull_request]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.7.0
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3.6.0
+      - name: Install Dependencies
+        run: |
+          cd .github/workflows
+          npm install
+      - name: Run Lint
+        run: |
+          cd .github/workflows
+          node lint_schema.js
