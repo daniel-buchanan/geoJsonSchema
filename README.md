@@ -1,4 +1,5 @@
 # JSON Schema for RFC7946
+[![Lint Schemas](https://github.com/daniel-buchanan/rfc7946-schema/actions/workflows/lint.yml/badge.svg)](https://github.com/daniel-buchanan/rfc7946-schema/actions/workflows/lint.yml)
 
 This repository is intended to provide JSON Schema Files which are fully self referenced and contained.
 
