@@ -5,32 +5,27 @@
   "description": "A helper schema for merging all possible geometries.",
   "link":"https://tools.ietf.org/html/rfc7946#section-3",
   "type": "object",
-  "allOf": [
-    {"$ref": "geometry.json"},
-    {
-      "oneOf": [
-        { 
-          "$ref": "point.json" 
-        },
-        { 
-          "$ref": "multiPoint.json" 
-        },
-        { 
-          "$ref": "lineString.json" 
-        },
-        { 
-          "$ref": "multiLineString.json" 
-        },
-        { 
-          "$ref": "polygon.json" 
-        },
-        { 
-          "$ref": "multiPolygon.json" 
-        },
-        { 
-          "$ref": "geometryCollection.json" 
-        }
-      ]
+  "oneOf": [
+    { 
+      "$ref": "point.json" 
+    },
+    { 
+      "$ref": "multiPoint.json" 
+    },
+    { 
+      "$ref": "lineString.json" 
+    },
+    { 
+      "$ref": "multiLineString.json" 
+    },
+    { 
+      "$ref": "polygon.json" 
+    },
+    { 
+      "$ref": "multiPolygon.json" 
+    },
+    { 
+      "$ref": "geometryCollection.json" 
     }
-  ]  
+  ]
 }

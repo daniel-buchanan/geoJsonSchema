@@ -5,7 +5,7 @@
   "link": "https://tools.ietf.org/html/rfc7946#section-3.1.8",
   "type": "object",
   "allOf": [
-    {"$ref": "geometry.json"},
+    { "$ref": "geoJSONObject.json" },
     {
       "required": ["geometries"],
       "properties": {
@@ -15,7 +15,26 @@
         "geometries": {
           "type": "array",
           "items": {
-              "$ref": "anyGeometry.json"
+              "oneOf": [
+                { 
+                  "$ref": "point.json" 
+                },
+                { 
+                  "$ref": "multiPoint.json" 
+                },
+                { 
+                  "$ref": "lineString.json" 
+                },
+                { 
+                  "$ref": "multiLineString.json" 
+                },
+                { 
+                  "$ref": "polygon.json" 
+                },
+                { 
+                  "$ref": "multiPolygon.json" 
+                }
+              ]
           }
         }
       }
