@@ -17,22 +17,22 @@
           "items": {
               "oneOf": [
                 { 
-                  "$ref": "point.json" 
+                  "$ref": "geoJsonPoint.json" 
                 },
                 { 
-                  "$ref": "multiPoint.json" 
+                  "$ref": "geoJsonMultiPoint.json" 
                 },
                 { 
-                  "$ref": "lineString.json" 
+                  "$ref": "geoJsonLineString.json" 
                 },
                 { 
-                  "$ref": "multiLineString.json" 
+                  "$ref": "geoJsonMultiLineString.json" 
                 },
                 { 
-                  "$ref": "polygon.json" 
+                  "$ref": "geoJsonPolygon.json" 
                 },
                 { 
-                  "$ref": "multiPolygon.json" 
+                  "$ref": "geoJsonMultiPolygon.json" 
                 }
               ]
           }

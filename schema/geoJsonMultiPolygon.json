@@ -5,7 +5,7 @@
   "link": "https://tools.ietf.org/html/rfc7946#section-3.1.7",
   "type": "object",
   "allOf": [
-    {"$ref": "geometry.json"},
+    {"$ref": "geoJsonGeometry.json"},
     {
       "required": ["coordinates"],
       "properties": {
@@ -19,7 +19,7 @@
             "items": {
               "type": "array",
               "minItems": 4,
-              "items": { "$ref": "position.json" }
+              "items": { "$ref": "geoJsonPosition.json" }
             }
           }
         }

@@ -5,18 +5,18 @@
   "link": "https://tools.ietf.org/html/rfc7946#section-3.3",
   "type": "object",
   "allOf": [
-    {"$ref": "geoJSONObject.json"},
+    {"$ref": "geoJsonObject.json"},
     {
       "required": ["features"],
       "properties": {
         "type": {
-          "$ref": "enums/geoJSONObjectTypes.json",
+          "$ref": "enums/geoJsonObjectTypes.json",
           "default": "FeatureCollection"
         },
         "features": {
           "description": "A list of features associated with the collection",
           "type": "array",
-          "items": { "$ref": "feature.json" }
+          "items": { "$ref": "geoJsonFeature.json" }
         }
       }
     }

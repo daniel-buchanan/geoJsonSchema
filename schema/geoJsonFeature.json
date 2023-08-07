@@ -21,12 +21,12 @@
           ]
         },
         "type": {
-          "$ref": "enums/geoJSONObjectTypes.json",
+          "$ref": "enums/geoJsonObjectTypes.json",
           "default": "Feature"
         },
         "geometry": {
           "oneOf": [
-            { "$ref": "anyGeometry.json" },
+            { "$ref": "anyGeoJsonGeometry.json" },
             { "type": "null" }
           ]
         },

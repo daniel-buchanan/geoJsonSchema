@@ -6,7 +6,7 @@
   "type": "object",
   "required": ["type"],
   "properties": {
-    "type": { "$ref": "enums/geoJSONObjectTypes.json" },
-    "bbox": { "$ref": "bbox.json" }
+    "type": { "$ref": "enums/geoJsonObjectTypes.json" },
+    "bbox": { "$ref": "geoJsonBbox.json" }
   }
 }

@@ -5,11 +5,11 @@
   "description": "A schema to match on any geometry type.",
   "link":"https://tools.ietf.org/html/rfc7946#section-3",
   "allOf": [
-    { "$ref": "geoJSONObject.json" },
+    { "$ref": "geoJsonObject.json" },
     {
       "properties": {
         "type": { 
-          "$ref": "enums/geometryTypes.json" 
+          "$ref": "enums/geoJsonGeometryTypes.json" 
         },
         "coordinates": {
           "type":"array",

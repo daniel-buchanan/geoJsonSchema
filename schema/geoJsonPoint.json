@@ -5,14 +5,14 @@
   "link": "https://tools.ietf.org/html/rfc7946#section-3.1.2",
   "type": "object",
   "allOf": [
-    {"$ref": "geometry.json"},
+    {"$ref": "geoJsonGeometry.json"},
     {
       "required": ["coordinates"],
       "properties": {
         "type": {
           "enum": ["Point"]
         },
-        "coordinates": { "$ref": "position.json" }
+        "coordinates": { "$ref": "geoJsonPosition.json" }
       }
     }
   ]
