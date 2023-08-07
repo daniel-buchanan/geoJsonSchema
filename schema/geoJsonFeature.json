@@ -5,7 +5,7 @@
   "link": "https://tools.ietf.org/html/rfc7946#section-3.2",
   "type": "object",
   "allOf": [
-    {"$ref": "geoJsonbject.json"},
+    {"$ref": "geoJsonObject.json"},
     {
       "required": ["geometry"],
       "properties": {
