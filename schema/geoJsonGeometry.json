@@ -12,84 +12,30 @@
           "$ref": "enums/geoJsonGeometryTypes.json" 
         },
         "coordinates": {
-          "type":"array",
-          "items": {
-            "oneOf": [
-              {
-                "type": "array",
-                "minItems": 2,
-                "items": {
-                  "type": "number"
-                }
-              },
-              {
-                "type": "array",
-                "minItems": 2,
-                "items": {
-                  "type": "array",
-                  "minItems": 2,
-                  "items": {
-                    "type": "number"
-                  }
-                }
-              },
-              {
-                "type": "array",
-                "items": {
-                  "type": "array",
-                  "minItems": 4,
-                  "items": {
+          "oneOf": [
+            { 
+              "type": "array",
+              "items": {
+                "oneOf": [
+                  { "$ref": "geoJsonPosition.json" },
+                  { 
                     "type": "array",
-                    "minItems": 2,
                     "items": {
-                      "type": "number"
+                      "oneOf": [
+                        { "$ref": "geoJsonPosition.json" },
+                        { 
+                          "type": "array",
+                          "items": { "$ref": "geoJsonPosition.json" }
+                        }
+                      ]
                     }
                   }
-                }
-              },
-              {
-                "type": "array",
-                "items": {
-                  "type": "array",
-                  "minItems": 2,
-                  "items": {
-                    "type": "number"
-                  }
-                }
-              },
-              {
-                "type": "array",
-                "items": {
-                  "type": "array",
-                  "minItems": 2,
-                  "items": {
-                    "type": "array",
-                    "minItems": 2,
-                    "items": {
-                      "type": "number"
-                    }
-                  }
-                }
-              },
-              {
-                "type": "array",
-                "items": {
-                  "type": "array",
-                  "items": {
-                    "type": "array",
-                    "minItems": 4,
-                    "items": {
-                      "type": "array",
-                      "minItems": 2,
-                      "items": {
-                        "type": "number"
-                      }
-                    }
-                  }
-                }
+                ]
               }
-            ]
-          }
+            },
+            { "$ref": "geoJsonPosition.json" },
+            { "type": "object" }
+          ]
         }
       }
     }
