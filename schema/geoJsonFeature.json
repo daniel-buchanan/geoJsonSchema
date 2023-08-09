@@ -24,18 +24,7 @@
           "$ref": "enums/geoJsonObjectTypes.json",
           "default": "Feature"
         },
-        "geometry": {
-          "oneOf": [
-            { "$ref": "anyGeoJsonGeometry.json" },
-            { "type": "null" }
-          ]
-        },
-        "properties": {
-          "oneOf": [
-            { "type": "object" },
-            { "type": "null" }
-          ]
-        }
+        "geometry": { "$ref": "anyGeoJsonGeometry.json" }
       }
     }
   ]
