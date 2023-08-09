@@ -16,24 +16,12 @@
           "type": "array",
           "items": {
               "oneOf": [
-                { 
-                  "$ref": "geoJsonPoint.json" 
-                },
-                { 
-                  "$ref": "geoJsonMultiPoint.json" 
-                },
-                { 
-                  "$ref": "geoJsonLineString.json" 
-                },
-                { 
-                  "$ref": "geoJsonMultiLineString.json" 
-                },
-                { 
-                  "$ref": "geoJsonPolygon.json" 
-                },
-                { 
-                  "$ref": "geoJsonMultiPolygon.json" 
-                }
+                { "$ref": "geoJsonPoint.json" },
+                { "$ref": "geoJsonMultiPoint.json" },
+                { "$ref": "geoJsonLineString.json" },
+                { "$ref": "geoJsonMultiLineString.json" },
+                { "$ref": "geoJsonPolygon.json" },
+                { "$ref": "geoJsonMultiPolygon.json" }
               ]
           }
         }

@@ -24,7 +24,16 @@
           "$ref": "enums/geoJsonObjectTypes.json",
           "default": "Feature"
         },
-        "geometry": { "$ref": "anyGeoJsonGeometry.json" }
+        "geometry": { 
+          "oneOf": [
+            { "$ref": "geoJsonLineString.json" },
+            { "$ref": "geoJsonMultiLineString.json" },
+            { "$ref": "geoJsonMultiPoint.json" },
+            { "$ref": "geoJsonMultiPolygon.json" },
+            { "$ref": "geoJsonPoint.json" },
+            { "$ref": "geoJsonPolygon.json" },
+            { "$ref": "geoJsonGeometryCollection.json" }
+          ]
       }
     }
   ]
