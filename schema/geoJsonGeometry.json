@@ -13,6 +13,8 @@
         },
         "coordinates": {
           "oneOf": [
+            { "type": "object" },
+            { "$ref": "geoJsonPosition.json" },
             { 
               "type": "array",
               "items": {
@@ -32,9 +34,7 @@
                   }
                 ]
               }
-            },
-            { "$ref": "geoJsonPosition.json" },
-            { "type": "object" }
+            }
           ]
         }
       }

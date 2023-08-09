@@ -34,6 +34,7 @@
             { "$ref": "geoJsonPolygon.json" },
             { "$ref": "geoJsonGeometryCollection.json" }
           ]
+        }
       }
     }
   ]
