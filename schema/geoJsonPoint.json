@@ -12,7 +12,13 @@
         "type": {
           "enum": ["Point"]
         },
-        "coordinates": { "$ref": "geoJsonPosition.json" }
+        "coordinates": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "number"
+          }
+        }
       }
     }
   ]

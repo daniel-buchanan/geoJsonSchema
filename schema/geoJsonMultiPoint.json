@@ -14,7 +14,13 @@
         },
         "coordinates": {
           "type": "array",
-          "items": { "$ref": "geoJsonPosition.json" }
+          "items": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "number"
+            }
+          }
         }
       }
     }

@@ -17,7 +17,13 @@
           "items": {
             "type": "array",
             "minItems": 4,
-            "items": { "$ref": "geoJsonPosition.json" }
+            "items": {
+              "type": "array",
+              "minItems": 2,
+              "items": {
+                "type": "number"
+              }
+            }
           }
         }
       }
