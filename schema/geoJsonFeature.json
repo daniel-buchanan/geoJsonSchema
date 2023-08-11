@@ -20,6 +20,16 @@
             }
           ]
         },
+        "properties": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object"
+            }
+          ]
+        },
         "type": {
           "$ref": "enums/geoJsonObjectTypes.json",
           "default": "Feature"
