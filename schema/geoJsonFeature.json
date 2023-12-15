@@ -31,8 +31,7 @@
           ]
         },
         "type": {
-          "$ref": "enums/geoJsonObjectTypes.json",
-          "default": "Feature"
+          "$ref": "enums/geoJsonObjectTypes.json"
         },
         "geometry": { 
           "oneOf": [
